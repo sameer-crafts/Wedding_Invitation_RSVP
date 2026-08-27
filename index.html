@@ -39,7 +39,7 @@
 
 <style>
   html { scroll-behavior: smooth; }
-  body { background-color: #FBF9F4; }
+  body { background-color: #1E3A2B; }
 
   /* Reveal-on-scroll base state; JS toggles .in-view */
   .reveal { opacity: 0; transform: translateY(2rem); transition: opacity 1000ms cubic-bezier(0.16,1,0.3,1), transform 1000ms cubic-bezier(0.16,1,0.3,1); }
@@ -150,7 +150,7 @@
 </style>
 </head>
 
-<body class="bg-parchment font-sans text-forest antialiased overflow-x-hidden selection:bg-gold/30 selection:text-forest">
+<body class="bg-forest font-sans text-forest antialiased overflow-x-hidden selection:bg-gold/30 selection:text-forest">
 
 <!-- Global SVG symbol library — reused leaf / botanical line-art motifs -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -210,7 +210,7 @@
 </svg>
 
 <!-- =================== PASSWORD GATE =================== -->
-<div id="gate" class="fixed inset-0 z-[100] overflow-hidden bg-[radial-gradient(circle_at_50%_38%,#335840_0%,#1E3A2B_55%,#122219_100%)] flex items-center justify-center px-6 transition-opacity duration-700 ease-out">
+<div id="gate" class="fixed inset-0 h-[100dvh] z-[100] overflow-hidden bg-[radial-gradient(circle_at_50%_38%,#335840_0%,#1E3A2B_55%,#122219_100%)] flex items-center justify-center px-6 transition-opacity duration-700 ease-out">
 
   <!-- drifting leaves — pure CSS, large & clearly visible, calm and slow -->
   <div id="leaves-container" class="absolute inset-0 z-0 pointer-events-none overflow-hidden" aria-hidden="true">
@@ -289,10 +289,10 @@
 </button>
 
 <!-- =================== MAIN CONTENT =================== -->
-<main id="main">
+<main id="main" class="bg-parchment">
 
   <!-- ---------- HERO ---------- -->
-  <section id="hero" class="relative h-screen w-full overflow-hidden">
+  <section id="hero" class="relative h-[100dvh] w-full overflow-hidden">
     <img src="Native_place_1.jpg" alt="Chiplun homeland" class="absolute inset-0 w-full h-full object-cover object-bottom">
     <div class="absolute inset-0 bg-black/40"></div>
 
